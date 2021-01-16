@@ -1,0 +1,19 @@
+﻿<Window x:Class="Baza_Wycieczkowa.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Baza_Wycieczkowa"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="286.5" Width="300">
+    <Grid>
+        <TextBox x:Name="textBox_login" Height="28" Margin="81,34,91,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="textBox_hasło" MaxLength="25" PasswordChar="*" Height="28" Margin="81,101,91,0" VerticalAlignment="Top"/>
+        <Label Content="Hasło" HorizontalAlignment="Left" Margin="81,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.833"/>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="81,5,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Login" Content="Zaloguj" Margin="81,139,91,0" VerticalAlignment="Top" Click="Login_Click"/>
+        <Label x:Name="label_error" Content="" HorizontalAlignment="Left" Margin="10,226,0,0" VerticalAlignment="Top" Width="272" HorizontalContentAlignment="Center"/>
+        <Button x:Name="rej_button" Content="Zarejestruj" Margin="81,176,91,0" VerticalAlignment="Top" Click="rej_button_Click"/>
+
+    </Grid>
+</Window>

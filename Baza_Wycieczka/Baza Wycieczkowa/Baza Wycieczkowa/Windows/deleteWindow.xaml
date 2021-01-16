@@ -1,0 +1,47 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Baza_Wycieczkowa"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="Baza_Wycieczkowa.deleteWindow"
+        mc:Ignorable="d"
+        Title="deleteWindow" Height="298" Width="313.0">
+    <Grid>
+        <TabControl x:Name="tab_c" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="305"
+                    SelectionChanged="TabControl_SelectionChanged">
+            <TabItem x:Name="rezerwacje" Header="Rezerwacje">
+                <Grid Background="#FFE5E5E5" />
+            </TabItem>
+            <TabItem x:Name="Piloci" Header="Piloci">
+                <Grid Background="#FFE5E5E5" />
+            </TabItem>
+            <TabItem x:Name="Hotel" Header="Hotel">
+                <Grid Background="#FFE5E5E5" />
+            </TabItem>
+            <TabItem x:Name="lokal" Header="Lokale">
+                <Grid Background="#FFE5E5E5" />
+            </TabItem>
+            <TabItem x:Name="wycieczki" Header="Wycieczki">
+                <Grid Background="#FFE5E5E5" />
+            </TabItem>
+            <TabItem x:Name="ubezpieczenia" Header="Ubezpieczenia">
+                <Grid Background="#FFE5E5E5" />
+            </TabItem>
+            <TabItem x:Name="samoloty" Header="Samoloty">
+                <Grid Background="#FFE5E5E5" />
+            </TabItem>
+            <TabItem x:Name="lotniska" Header="Lotniska">
+                <Grid Background="#FFE5E5E5" />
+            </TabItem>
+            <TabItem x:Name="transporty" Header="Transport na lotnisko">
+                <Grid Background="#FFE5E5E5" />
+            </TabItem>
+        </TabControl>
+        <TextBlock TextWrapping="WrapWithOverflow" 
+                   Text="Patrząc na widok zawannsowany wybierz zakładkę iwpisz ID przedmiotu jaki zamierzasz usunąć " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,68,0,0" Width="285" Height="72" FontSize="16"/>
+        <TextBox x:Name="id_text" HorizontalAlignment="Left" Height="28" Margin="89,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="delete_button" Content="Button" HorizontalAlignment="Left" Margin="111,196,0,0" VerticalAlignment="Top" Width="75" Background="Red" BorderBrush="#FFFF2C2C" Foreground="#DDFFA200" Click="delete_button_Click"/>
+        <Label x:Name="error_label" Content="" HorizontalAlignment="Left" Margin="10,233,0,0" VerticalAlignment="Top" Width="285" HorizontalContentAlignment="Center"/>
+    </Grid>
+</Window>
